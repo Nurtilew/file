@@ -1,0 +1,6 @@
+{
+  "name": "QazaqFin AI & Smart Contracts",
+  "description": "Қаржы есептері, сурет талдауы және AI чаты бар демонстрациялық прототип. Нақты банк немесе заңды күші бар қолтаңба қызметі емес.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

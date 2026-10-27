@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="kk" style="background-color: #150d08; color: #f7ede2;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QazaqFin AI &amp; Smart Contracts</title>
+    <meta name="description" content="Қаржы есептері, сурет талдауы және AI чаты бар демонстрациялық прототип. Нақты банк немесе заңды күші бар қолтаңба қызметі емес." />
+    <meta property="og:title" content="QazaqFin AI &amp; Smart Contracts" />
+    <meta property="og:description" content="Қаржы есептері, сурет талдауы және AI чаты бар демонстрациялық прототип. Нақты банк немесе заңды күші бар қолтаңба қызметі емес." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      html, body {
+        background-color: #150d08;
+        color: #f7ede2;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      }
+      @keyframes qzpulse {
+        0% { transform: translateX(-100%); }
+        50% { transform: translateX(100%); }
+        100% { transform: translateX(250%); }
+      }
+    </style>
+    <script>
+      (function(){
+        try {
+          // Ensure trailing slash for repository subpath hosting so relative assets load correctly
+          if (typeof window !== 'undefined' && window.location && window.location.pathname) {
+            if (window.location.pathname.length > 1 && !window.location.pathname.endsWith('/') && !window.location.pathname.includes('.')) {
+              window.history.replaceState(null, '', window.location.pathname + '/' + window.location.search + window.location.hash);
+            }
+          }
+          // Handle redirect from 404.html if applicable (safe against SecurityError)
+          if (typeof window !== 'undefined' && window.sessionStorage) {
+            var redirect = window.sessionStorage.redirect;
+            delete window.sessionStorage.redirect;
+            if (redirect && redirect !== location.href) {
+              window.history.replaceState(null, null, redirect);
+            }
+          }
+        } catch (e) {
+          // Cross-origin iframe or restricted security context - safely ignore
+        }
+      })();
+    </script>
+  </head>
+  <body style="background-color: #150d08; color: #f7ede2; margin: 0; padding: 0; min-height: 100vh;" class="bg-[#150d08] text-[#f7ede2]">
+    <div id="root">
+      <!-- Instant dark branded fallback to eliminate white flash before React mounts -->
+      <div id="app-bootstrap-loader" style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #150d08; color: #f7ede2; text-align: center; padding: 24px; box-sizing: border-box;">
+        <div style="width: 58px; height: 58px; border-radius: 18px; background: linear-gradient(135deg, #3a271c, #1a100a); border: 1px solid #6b4a36; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 32px rgba(201, 142, 96, 0.25); margin-bottom: 20px;">
+          <span style="font-size: 28px;">☕</span>
+        </div>
+        <h1 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 800; color: #fff9f5; letter-spacing: -0.02em;">QazaqFin AI</h1>
+        <p style="margin: 0 0 20px 0; font-size: 13px; color: #c98e60; max-width: 320px; line-height: 1.5;">Қазақстандық AI Қаржы және Смарт Келісімшарттар жүйесі жүктелуде...</p>
+        <div style="width: 140px; height: 4px; background: #2d1d14; border-radius: 9999px; overflow: hidden; position: relative;">
+          <div style="width: 50%; height: 100%; background: linear-gradient(90deg, #b5805a, #dba77b); border-radius: 9999px; animation: qzpulse 1.2s infinite ease-in-out;"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

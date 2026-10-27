@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QazaqFin AI &amp; Smart Contracts</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      try {
+        if (typeof window !== 'undefined' && window.sessionStorage) {
+          sessionStorage.redirect = location.href;
+        }
+        var pathSegmentsToKeep = 1;
+        var l = window.location;
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      } catch (e) {
+        // ignore
+      }
+    </script>
+  </head>
+  <body style="background-color: #150d08; color: #f7ede2; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+    <p>Жүктелуде...</p>
+  </body>
+</html>
